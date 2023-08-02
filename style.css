@@ -5,10 +5,21 @@
 }
 
 :root{
+    --text-color:#ffffff;
 
+    --font-primaty:'Roboto', sans-serif;;
     font-size: 62.5%;
 }
 
 body{
+    background-color: black;
     font-size: 1.6rem;
+}
+
+*,body,button{
+    font-family: var(--font-primaty);
+}
+
+a{
+    text-decoration: none;
 }
