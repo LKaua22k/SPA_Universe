@@ -8,13 +8,17 @@
     --text-color:#C4C4CC;
     --text-color-hover:#ffffff;
     --title-color:#E1E1E6;
+    --btn-color-hover:#02799D;
 
     --font-primaty:'Roboto', sans-serif;;
     font-size: 62.5%;
 }
 
 body{
-    background-color: black;
+    background-image: url(./imgs/mountains-universe-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     font-size: 1.6rem;
 }
 
@@ -34,6 +38,7 @@ svg{
     width: 1144px;
     margin: 0 auto;
     height: 100vh;
+    border: 1px solid red;
 }
 
 header{
@@ -55,6 +60,7 @@ nav a{
     line-height: 2.1rem;
     color: var(--text-color) ;
     transition: .2s;
+    border: 1px solid red;
 }
 
 
@@ -84,8 +90,12 @@ nav a:hover{
     border: 2px solid var(--text-color-hover);
     border-radius: .5rem;
     color: var(--text-color-hover);
+    transition: .5s;
+    cursor: pointer;
 }
 
 .home button:hover{
     background-color: white;
+    color: var(--btn-color-hover);
+    transition: .2s;
 }
