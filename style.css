@@ -34,11 +34,17 @@ svg{
     width: 4.9rem;
 }
 
+h1{
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 6rem;
+    color: var(--title-color);
+}
+
 .container{
     width: 1144px;
     margin: 0 auto;
     height: 100vh;
-    border: 1px solid red;
 }
 
 header{
@@ -49,7 +55,7 @@ nav{
     display:flex;
     align-items: center;
     justify-content: center;
-    width: 46.9rem;
+    width: fit-content;
     gap: 3.2rem;
     padding: 4rem 0;
 }
@@ -60,7 +66,6 @@ nav a{
     line-height: 2.1rem;
     color: var(--text-color) ;
     transition: .2s;
-    border: 1px solid red;
 }
 
 
@@ -76,14 +81,9 @@ nav a:hover{
 
 }
 
-.home h1{
-    font-size: 4.8rem;
-    font-weight: 700;
-    line-height: 6rem;
-    color: var(--title-color);
-}
-
 .home button{
+    font-size: 1.4rem;
+    font-weight: 700;
     margin-top: 2.4rem;
     padding: 1.2rem 3.2rem;
     background-color: transparent;
