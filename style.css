@@ -41,6 +41,15 @@ h1{
     color: var(--title-color);
 }
 
+p{
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.9rem;
+    color: var(--title-color);
+    width: 64.8rem;
+    margin-top: 1.6rem;
+}
+
 .container{
     width: 1144px;
     margin: 0 auto;
@@ -98,4 +107,8 @@ nav a:hover{
     background-color: white;
     color: var(--btn-color-hover);
     transition: .2s;
+}
+
+.universe,.exploracao{
+    margin-top: 5rem;
 }
