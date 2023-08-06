@@ -27,14 +27,26 @@
                     </svg>
                 </a>
 
-                <a href="/">Home</a>
-                <a href="/universo"> O Universo</a>
-                <a href="/exploracao">Exploração</a>
+                <a href="/" onclick="route()">Home</a>
+                <a href="/universo" onclick="route()"> O Universo</a>
+                <a href="/exploracao" onclick="route()">Exploração</a>
             </nav>
         </header>
 
         <div id="#app">
         </div>
     </div>
+
+
+    <script>
+
+        
+        function route(event){
+            event = event || window.event
+
+            event.preventDefault()
+        }
+    </script>
+
 </body>
 </html>
