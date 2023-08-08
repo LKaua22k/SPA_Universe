@@ -43,7 +43,8 @@
         const routes = {
             "/" : "./pages/home.html",
             "/universo" : "./pages/universe.html",
-            "/exploracao" : "./pages/exploracao.html"
+            "/exploracao" : "./pages/exploracao.html",
+            404 : ""
         }
         
         function route(event){
@@ -52,15 +53,17 @@
             event.preventDefault()
 
             window.history.pushState({},"", event.target.href)
+
+            handle()
         }
 
         function handle(){
 
-            const {pathname} = window.location.pa
-            const route = routes[pathname]
+            const {pathname} = window.location
+            const route = routes[pathname] || routes[404]
             
             fetch(route).then(data => data.text()).then(html => {
-                document.querySelector("#app").innerHTML = html
+                document.getElementById("#app").innerHTML = html
             })
             
         }
