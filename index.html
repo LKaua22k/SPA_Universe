@@ -40,14 +40,28 @@
 
     <script>
 
+        const routes = {
+            "/" : "./pages/home.html",
+            "/universo" : "./pages/universe.html",
+            "/exploracao" : "./pages/exploracao.html"
+        }
         
         function route(event){
             event = event || window.event
 
             event.preventDefault()
+
+            window.history.pushState({},"", event.target.href)
         }
 
         function handle(){
+
+            const {pathname} = window.location.pa
+            const route = routes[pathname]
+            
+            fetch(route).then(data => data.text()).then(html => {
+                document.querySelector("#app").innerHTML = html
+            })
             
         }
     </script>
